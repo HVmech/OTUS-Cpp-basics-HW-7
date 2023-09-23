@@ -258,7 +258,6 @@ void list_f<T>::insert(T val, size_t pos)
 
 					cur->next = new node_f<T>{cur->value, cur->next};
 					cur->value = val;
-					m_last = cur->next;
 				}
 				else
 				{
