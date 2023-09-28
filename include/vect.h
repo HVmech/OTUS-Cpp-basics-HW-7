@@ -82,12 +82,12 @@ public:
 
  	//iter_v begin();
 	iter_v<T> begin(){
-		return iter_v::iter_v<T>{m_data};
+		return iter_v<T>{m_data};
 	}
 
 	//iter_v end();
 	iter_v<T> end(){
-		return iter_v::iter_v<T>{m_data+m_count};
+		return iter_v<T>{m_data+m_count};
 	}
 
 	// TODO :

@@ -81,12 +81,12 @@ public:
 
  	//iter begin();
 	iter_fb<T> begin(){
-		return iter_fb::iter_fb<T>{m_first};
+		return iter_fb<T>{m_first};
 	}
 
 	//iter end();
 	iter_fb<T> end(){
-		return iter_fb::iter_fb<T>{m_last->next};
+		return iter_fb<T>{m_last->next};
 	}
 
     // D-ctor

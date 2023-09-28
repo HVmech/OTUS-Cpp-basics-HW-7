@@ -82,13 +82,13 @@ public:
  	//iter begin();
 	iter_f<T> begin()
 	{
-		return iter_f::iter_f<T>{m_first};
+		return iter_f<T>{m_first};
 	}
 
 	//iter end();
 	iter_f<T> end()
 	{
-		return iter_f::iter_f<T>{m_last->next};
+		return iter_f<T>{m_last->next};
 	}
 
     // D-ctor
