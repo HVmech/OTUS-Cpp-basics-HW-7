@@ -2,11 +2,11 @@
 template <typename T>
 struct node_fb
 {
-    explicit node_fb(T val) : prev{nullptr}, next{nullptr}, value{val} {}
+    explicit node_fb(T val) : value{val}, prev{nullptr}, next{nullptr} {}
 
-    node_fb(T val, node_fb<T>* prv) : prev{prv}, next{nullptr}, value{val} {}
+    node_fb(T val, node_fb<T>* prv) : value{val}, prev{prv}, next{nullptr} {}
 
-    node_fb(T val, node_fb<T>* prv, node_fb<T>* nxt) : prev{prv}, next{nxt}, value{val} {}
+    node_fb(T val, node_fb<T>* prv, node_fb<T>* nxt) : value{val}, prev{prv}, next{nxt} {}
 	
 	~node_fb()
 	{
